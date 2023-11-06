@@ -1,0 +1,22 @@
+<div class="w-1/6 " style="height: 750px; overflow-y: auto; background-color: #E7E9EB; width: 143px;">
+  <div class="px-2 pt-4 pb-8">
+    <ul class="space-y-2" style="margin-left: 0px;">
+      <% Subcategory.where(category_id: @category).each do |cat| %>
+      <li>
+        <a href="<%= user_topic_content_index_path(topic_id: cat.id) %>"
+           data-turbo-frame="test"
+           class="flex items-center justify-between py-1.5 px-4 rounded cursor-pointer">
+          <!-- Link content here -->
+         
+            <span><%= cat.title %></span>
+        
+         
+        </a>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<%=turbo_frame_tag "test" do%>
+<%end%>

@@ -1,0 +1,51 @@
+<%=turbo_frame_tag "test" do%>
+<style type="text/css">
+  
+h1, h2 , h3, h4, h5  {
+    margin-left: -736px;
+    font-size: 30px;
+}
+ p  {
+    font-size: -371px;
+    margin-left: -344px;
+    text-align: center;
+    width: 742px;
+    margin-left: -193px;
+}
+ul {
+  list-style-type: disc;
+  
+  text-align: center;
+      margin-left: 107px;
+}
+
+li::marker {
+  text-align: left;
+  margin-left: 20px;
+
+}
+
+li {
+  margin-bottom: 5px;
+   text-align: left;
+}
+
+
+</style>
+
+
+<br><center>
+    
+   <div class="box-content h-40 w-full h-100 p-5 shadow bg-white " style="margin-left: -75px;width: 1044px;
+    margin-top: -774px; height: 750px; overflow-y: auto;">
+ 
+    <%=@topic_content.title.html_safe.html_safe%>
+ 
+</div> 
+</center>
+
+
+
+
+
+<%end%>

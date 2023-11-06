@@ -1,0 +1,2 @@
+module User::TopicContentHelper
+end
