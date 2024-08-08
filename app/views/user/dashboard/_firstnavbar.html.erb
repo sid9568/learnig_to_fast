@@ -1,31 +1,34 @@
 <!-- navbar goes here -->
 <nav class="bg-black">
-  <div class="max-w-6xl mx-auto px-4 py-0">
+  <div class="max-w-6xl mx-auto">
     <div class="flex justify-between">
 
       <div class="flex space-x-4">
         <!-- logo -->
-        <div>
+        <div class="mr-4">
           <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
-            <svg class="h-6 w-6 mr-1 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="h-6 w-6 mr-1 text-blue-400 hover:text-rose-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
             </svg>
-            <span class="font-bold text-white">Learning To Fast</span>
+            <span class="text-lg font-bold text-white">Learning To Fast</span>
           </a>
         </div>
 
         <!-- primary nav -->
         <div class="hidden md:flex items-center space-x-1">
-          <a href="<%=root_path%>" class="py-5 px-3 text-white hover:text-rose-800 ">Home</a>
-          <a href="#" class="py-5 px-3 text-white hover:text-rose-800 ">Features</a>
-          <a href="#" class="py-5 px-3 text-white hover:text-rose-800 ">Pricing</a>
+          <a href="<%=root_path%>" class="py-3 px-3 text-lg text-white hover:blue-100">Home</a>
+          <a href="<%=root_path%>" class="py-2 px-3 text-lg text-white hover:blue-100">
+          Language
+          </a>
+          <a href="#" class="py-3 px-3 text-lg text-white hover:text-rose-800 ">Features</a>
+          <a href="#" class="py-3 text-lg px-3 text-white hover:text-rose-800 ">Pricing</a>
         </div>
       </div>
 
       <!-- secondary nav -->
       <div class="hidden md:flex items-center space-x-1">
-        <a href="" class="py-2 px-3 text-white">Login</a>
-        <a href="" class="py-1 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">Signup</a>
+        <a href="" class="py-2  text-xl font-bold px-3 text-white">Login</a>
+        <a href="" class="py-1 px-3 bg-yellow-400 text-xl font-bold hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">Signup</a>
       </div>
 
       <!-- mobile button goes here -->
